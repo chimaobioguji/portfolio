@@ -4,115 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website</title> 
-    <link rel="stylesheet" href="../Portfolio/css/style.css">
+    <title>business portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <h2 class="logo">portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#logo">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#about">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="https://wa.me/+2348061994498">Contact us</a></li>
-            </ul>
-            <a href="#" class="btn">Subscribe</a>
-        </nav>
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Chimaobi <span>Henry</span></h1>
-            <h3>I'm a Web Developer. </h3>
-            <div class="newsletter">
-             <form action="">
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <button> <a href="chimaobioguji@gmail.com"> let's start</a></button>
-             </form>   
-
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Port<span>folio</span>.</h1>
+                <ul id="sidemenu">
+                    <li ><a href="#header">Home</a></li>
+                    <li ><a href="#about 2">About Me</a></li>
+                    <li ><a href="#services">Services</a></li>
+                    <li ><a href="#portfolio">portfolio</a></li>
+                    <li ><a href="#contact">contact</a></li>
+                    <img src="./icons/icons8-close-button-32.png" alt="" onclick="closemenu()">
+                </ul>
+                <img src="./icons/icons8-menu-30.png" alt="" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, i'm <span>Chimaobi</span> <br> Oguji Henry </h1>
             </div>
         </div>
     </div>
-    <section class="about" id="about">
-        <div class="main">
-            <img src="../Portfolio//img/Adobe_Express_20230403_1346530_1.png" alt="" class="image" >
-            <div class="about-text">
-                <h2> About Me</h2>
-                <h5>Developer <span>& Designer</span></h5>
-                <p>My name is Chimaobi Oguji Henry. I am a front-end web designer. I can provide clean code and pixel
-                    perfect design. I also make the website more & more interactive with web
-                    animations. A responsive design makes your website accessible to all users, regardless of their devices.
-                </p>
-                <button type="button"> <a href="https://wa.me/+2348061994498"> Let's Talk</a></button>
-            </div>
-        </div>
-    </section>
-        <!-- service section -->
-    <div class="service">
-        <div class="title">
-            <h2>Our services</h2>
-        </div>
-        
-        <div class="box">
-            <div class="card">
-                <img src="../Portfolio/icons/icons8-bars-24.png" alt="">
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>Every Website should be built with two primary goals: Firstly, it needs
-                        to work across all devices. Secondly, it needs to be as fast as possible.
-                    </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read more</a>
-                    </p>
-                </div> 
-            </div>
-
-            <div class="card">
-                <img src="../Portfolio/icons/icons8-user-30.png" alt="">
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>Every Website should be built with two primary goals: Firstly, it needs
-                        to work across all devices. Secondly, it needs to be as fast as possible.
-                    </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read more</a>
-                    </p>
-                </div> 
-            </div>
-
-            <div class="card">
-                <img src="../Portfolio/icons/icons8-notification-30.png" alt="">
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>Every Website should be built with two primary goals: Firstly, it needs
-                        to work across all devices. Secondly, it needs to be as fast as possible.
-                    </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read more</a>
-                    </p>
-                </div> 
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" >
+                    <img src="./img/studio pic brown 2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" id="about 2">About me</h1>
+                    <h5>Developer<span>& Designer</span></h5><br>
+                    <p> My name is Chimaobi Ogiji Henry, i'am a front-end web developer. I can provide clean code and pixel
+                        perfect design. I also make the website more & more interactive with web
+                    animations. A responsive design makes your website accessible to all users, regardless of their devices.  </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>     
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>UI/UX Design Training at ET Insitute</li>
+                            <li><span>2019 - 2022</span><br>Team lead at starApp llc</li>
+                            <li><span>2016 - 2018</span><br>UI/UX Design Executive at coin Digital ltd.</li>
+                            <li><span>2014 - 2016 </span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-current</span><br>UI/UX Design Training at My Teacher Insitute</li>
+                            <li><span>2020-2022</span><br>Attended Niger Delta Science School, Nigeria (senior secondary)</li>
+                            <li><span>2017-2019</span><br>Attended Federal Government College, Nigeria (junior secondary)</li>
+                           
+                        </ul>
+                    </div>    
+                </div>
             </div>
         </div>
     </div>
-        <!-- contact me -->
-        <div class="contact-me">
-            <p> Let Me Get You A Beautiful Website.</p>
-            <a class="button-two" href="https://wa.me/qr/QABWLMRIHXHFB1">Hire Me</a>
+    <!-- ----------------------Services---------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                   <img src="./img/6c3a964e-c2e6-4e61-be3f-27b3f6214f31.svg" alt="">
+                    <h2>Web design</h2>
+                    <p>Every website should be built with 
+                        two primary goals Firstly, it needs
+                        to work across all devices Secondly,
+                        it needs to be as fast as possible
+                    </p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <img src="./img/2572e4df-2bcd-4098-96f6-8945b972c163.svg" alt="">
+                    <h2>UI/UX design</h2>
+                    <p>UX refers to the term user experience, while UI refers to the user interface.
+                         Both elements are crucial to a product and work closely together.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <img src="./icons/icons8-app-48.png" alt="">
+                    <h2>App design</h2>
+                    <p>App design is the look and feel of a mobile application. This includes all
+                        the visual elements and interactive elements that impact how the app functions.
+                    </p>
+                         <a href="#">Learn more</a>
+                </div>
+            </div>
         </div>
-            <!-- footer start -->
-            <footer>
-                <p>Chimaobi Henry</p>
-                <p>For More HTML, CSS, and coding tutorial - please click the link beklow to
-                 subscribe to my channel:</p>
-                 <div class="social">
-                    <a href="https://www.facebook.com/profile.php?id=100070145275817"> <img src="..//Portfolio/icons/icons8-facebook-24.png" alt=""></a>
-                    <a href=""> <img src="../Portfolio/icons/instagram-new.png" alt=""></a>
-                    <a href="https://twitter.com/chimaobiHenry_3?t=MighjJUltetocD5oUkqtNQ&s=09"> <img src="../Portfolio//icons//twitter.png" alt=""></a>
-                 </div>
-
-                 <p class="end">CopyRight By Chimaobi Henry</p>
-
-            </footer>
-           
+    </div>
+    <!-- ---------portfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img/social media app.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                            <a href="#"><img src="./icons/icons8-link-64.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/music app.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                            <a href="#"><img src="./icons/icons8-link-64.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/shopping.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                            <a href="#"><img src="./icons/icons8-link-64.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-- ---------------------content-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <img src="./icons/icons8-mail-64.png" alt=""> chimaobioguji@gmail.com</p>
+                    <p> <img src="./icons/icons8-phone-30.png" alt=""> 08061994498</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100070145275817"><img src="./icons/icons8-facebook-24.png" alt=""></a>
+                        <a href="https://twitter.com/chimaobiHenry_3?t=vwRWwxtDcMr76mHcjE_JlQ&s=09"><img src="./icons/twitter.png" alt=""></a>
+                        <a href=""><img src="./icons/instagram-new.png" alt=""></a>
+                    </div>
+                    <a href="" class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your Email" required>
+                        <textarea name="Message" id="" placeholder="Your message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright by <img src="./icons/icons8-heart-64.png" alt=""> Chimaobi Oguji Henry</p>
+        </div>
+    </div>
+   
+    
+    <script src="./java script/script.js"></script>
 </body>
 </html>
